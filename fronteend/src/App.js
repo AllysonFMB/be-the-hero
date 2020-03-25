@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Imelo Estética
-        </p>
-        <a
-          className="App-link"
-          href="https://www.instagram.com/imeloestetica/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          instagram
-        </a>
-      </header>
-    </div>
-  );
+import Routes from './routes';
+
+function App(){
+ 
+    return(
+        <Routes/>
+    );
 }
 
 export default App;
+
+/**
+ * Exemplo de estado no react
+ * import React, { useState} from 'react';
+import Header from 'Header';
+
+ * function App(){
+    const [counter, setCounter] = useState(0);
+
+    function increment(){
+        setCounter(counter + 1);
+    }
+    
+    return(
+        <div>
+            <Header>Contando: {counter}</Header>
+            <button onClick = {increment}>Botandomore</button>
+        </div>
+    );
+}
+ */
